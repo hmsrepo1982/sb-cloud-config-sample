@@ -21,3 +21,18 @@ Spring Cloud Config Server -----> can connect to different Data Sources.
 Now changes become very simple. Make the change in GIT repo or commit change to GIT repo - 
 Code has datasource pointing to GIT REPO.
 Now it would take changes in real time instead - change, Build / deploy so that properties are hosted inside server.
+
+
+This is Cloud config server and it is using application.yml file in spring 
+
+https://github.com/hmsrepo1982/sb-config-server//application.yml
+
+the Key used is # 
+
+spring.cloud.config.server.git.uri=https://github.com/hmsrepo1982/sb-config-server/
+
+Default application URI to check this is #
+
+http://localhost:port/<file-name>/default 
+  
+when you run this application, you can form application url as suggested above so that you can see config file.
